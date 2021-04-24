@@ -1,5 +1,3 @@
 Title: spotify
 ----
-Source: https://open.spotify.com/artist/62zvoaELopfpFCR5s0IiUA
-----
-Template: source
+Input: https://open.spotify.com/artist/62zvoaELopfpFCR5s0IiUA

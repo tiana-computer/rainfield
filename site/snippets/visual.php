@@ -5,7 +5,7 @@
     <?php if ($file->type() == 'image') : ?>
       <div class="threeBlock">
         <figure class="threeBox">
-          <img style="width: 200px;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+          <img src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
           <figcaption><?= $file->caption() ?></figcaption>
         </figure>
       </div>
@@ -14,7 +14,7 @@
     <?php if ($file->type() == 'video') : ?>
       <div class="threeBlock">
         <figure class="threeBox">
-          <video style="width: 200px;" controls>
+          <video controls>
             <source src="<?= $file->url() ?>" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -25,7 +25,4 @@
 
   <?php endforeach ?>
 
-
 </div>
-
-<!-- um... wow -->

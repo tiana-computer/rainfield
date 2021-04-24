@@ -1,2 +1,6 @@
-title: Default Page
-preset: pages
+title: Input
+fields:
+  input:
+    label: Input
+    type: textarea
+    size: large

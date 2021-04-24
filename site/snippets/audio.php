@@ -3,7 +3,7 @@
 <?php foreach ($page->children()->listed() as $audio) : ?>
 
   <div class="oneBlock">
-    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="<?= $audio->source() ?>"></iframe>
+    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="<?= $audio->input() ?>"></iframe>
   </div>
 
 <?php endforeach ?>

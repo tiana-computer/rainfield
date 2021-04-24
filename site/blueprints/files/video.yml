@@ -1,0 +1,4 @@
+title: File
+fields:
+  caption:
+    type: text

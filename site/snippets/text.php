@@ -4,7 +4,7 @@
 
   <div class="textOneBlock">
     <h2><?= $text->title() ?></h2>
-    <p><?= $text->text() ?></p>
+    <p><?= $text->input() ?></p>
   </div>
 
 <?php endforeach ?>
