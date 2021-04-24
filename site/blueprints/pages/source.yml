@@ -1,0 +1,6 @@
+title: Default Page
+fields:
+  source:
+    label: Source
+    type: textarea
+    size: small
