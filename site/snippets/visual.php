@@ -1,6 +1,6 @@
 <div id="threeBlocks">
 
-  <?php foreach ($page->images()->sortBy('sort', 'asc') as $image) : ?>
+  <?php foreach ($page->images() as $image) : ?>
 
     <div class="threeBlock">
 
@@ -19,7 +19,7 @@
 
 </div>
 
-<?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
+<?php foreach ($page->files() as $file) : ?>
 
   <?php if ($file->type() == 'image') : ?>
     <figure>
