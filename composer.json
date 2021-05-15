@@ -1,14 +1,14 @@
 {
-    "name": "getkirby/plainkit",
-    "description": "Kirby Plainkit",
+    "name": "getkirby/rainfield",
+    "description": "rainfield",
     "type": "project",
-    "keywords": ["kirby", "cms", "starterkit"],
+    "keywords": ["blog", "rainfield"],
     "homepage": "https://getkirby.com",
     "authors": [
         {
-            "name": "Bastian Allgeier",
-            "email": "bastian@getkirby.com",
-            "homepage": "https://getkirby.com"
+            "name": "Tiana Dueck",
+            "email": "tianadueck@pm.me",
+            "homepage": "https://tiana.computer/"
         }
     ],
     "support": {
@@ -19,7 +19,9 @@
     },
     "require": {
         "php": ">=7.1.0",
-        "getkirby/cms": "^3.0"
+        "getkirby/cms": "^3.0",
+        "ext-mbstring": "*",
+        "ext-gd": "*"
     },
     "scripts": {
         "start": [
