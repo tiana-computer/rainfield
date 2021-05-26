@@ -1,3 +1,3 @@
 return [
-  'panel' => false
+  'panel' => true
 ];
