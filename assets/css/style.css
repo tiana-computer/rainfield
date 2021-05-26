@@ -1,374 +1,376 @@
 /* CSS files add styling rules to your content */
 
 body {
-    font-family: Times New Roman;
+    font-family: Times New Roman, serif;
     /*font-family: helvetica, arial, sans-serif;*/
-    margin: 2.5em;
-    margin-left: 3em;
-    margin-right: 3em;
+    margin: 2.5em 3em;
     line-height: 1.6;
     font-size: 12pt;
-  }
-  
-  .header {
-    font-family: Times New Roman;
+}
+
+.header {
+    font-family: Times New Roman, serif;
     color: blue;
     margin: 0;
     font-weight: normal;
     font-size: 22px;
     line-height: 2;
-  }
-  
-  .header a,
-  .header a:active {
+}
+
+.header a,
+.header a:active {
     color: blue;
     text-decoration: none;
     margin: 0;
     padding: 0;
     transition: 0.8s;
-  }
-  
-  .header a:hover {
+}
+
+.header a:hover {
     color: grey;
-  }
-  
-  h2 {
+}
+
+h2 {
     color: blue;
     margin: 0;
     font-weight: normal;
     font-size: 20pt;
-  }
-  
-  #main {
-    width: 100%;
-  }
+}
 
-  .container {
+#main {
+    width: 100%;
+}
+
+.container {
     display: grid;
     grid-template-columns: 150px 1fr;
-  }
-  
-  /*
-  #visualMain #nav {
+}
+
+#visualMain #nav {
     width: 120px;
     height: 1000px;
     float: left;
-  }
-  */
+}
 
-  #nav ul {
+#nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-  }
-  
-  #nav a {
+}
+
+#nav a {
     text-decoration: none;
     color: grey;
     transition: 0.8s;
-  }
-  
-  #nav a:hover {
+}
+
+#nav a:hover {
     color: gainsboro;
     text-decoration: none;
-  }
-  
-  #nav a:active {
+}
+
+#nav a:active {
     color: blue;
-  }
-  
-  #contents {
+}
+
+#contents {
     width: 100%;
-  }
-  
-    .rainText {
-      padding-left: 15px;
-    }
-  
-  /* stream grid */
-  
-  #blocks {
+}
+
+.rainText {
+    padding-left: 15px;
+}
+
+/* stream grid */
+
+#blocks {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     align-items: flex-end;
     justify-content: flex-end;
-  }
-  
-  #blocks p {
+}
+
+#blocks p {
     color: blue;
     transition: 0.8s;
-  }
-  
-  .block {
+}
+
+.block {
     border: 0.5px solid blue;
     height: 200px;
     position: relative;
-  }
-  
-  .block .box {
+}
+
+.block .box {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-  .box {
+}
+
+.box {
     color: blue;
     text-align: center;
-  }
-  
-  #blocks a:hover p {
+}
+
+#blocks a:hover p {
     color: grey;
-  }
-  
-  /* ONE GRID */
-  
-  #oneBlocks {
+}
+
+/* ONE GRID */
+
+#oneBlocks {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 20px;
     align-items: flex-end;
     justify-content: flex-end;
-  }
-  
-  .oneBlock p {
+}
+
+.oneBlock p {
     color: blue;
     transition: 0.8s;
-  }
-  
-  .oneBlock {
+}
+
+.oneBlock {
     min-height: 100px;
-    position: relative;  
-  }
-  
-  .oneBlock iframe
-  {
-      border: 0.5px solid blue;
-  }
-  
-  .textOneBlock {
+    position: relative;
+}
+
+.oneBlock iframe {
+    border: 0.5px solid blue;
+}
+
+.textOneBlock {
     border: 0;
     min-height: 100px;
     max-width: 500px;
     line-height: 1.6;
     position: relative;
     color: black;
-  }
-  
-  .oneBlock .oneBox {
+}
+
+.oneBlock .oneBox {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-  .oneBox {
+}
+
+.oneBox {
     color: blue;
     text-align: center;
-  }
-  
-  #oneBlocks a:hover p {
+}
+
+#oneBlocks a:hover p {
     color: grey;
-  }
-  
-  /* THREE GRID */
-  
-  #threeBlocks {
+}
+
+/* THREE GRID */
+
+#threeBlocks {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0px 0px;
+    gap: 0 0;
     align-items: flex-end;
     justify-content: flex-end;
-  }
-  
-  #threeBlocks p {
+}
+
+#threeBlocks p {
     color: blue;
     transition: 0.8s;
-  }
-  
-  #threeBlocks figure {
+}
+
+#threeBlocks figure {
     width: 65%;
-  }
-  
-  #threeBlocks img,
-  #threeBlocks video {
+}
+
+#threeBlocks img,
+#threeBlocks video {
     width: 100%;
-  }
-  
-  #threeBlocks figcaption {
+}
+
+#threeBlocks figcaption {
     color: grey;
     font-size: 10pt;
     text-align: center;
-    padding: 0px;
-    padding-top: 10px;
-    margin: 0px;
-  }
-  
-  .threeBlock {
+    padding: 10px 0 0;
+    margin: 0;
+}
+
+.threeBlock {
     min-height: 250px;
     position: relative;
-  }
-  
-  .threeBlock .threeBox {
+}
+
+.threeBlock .threeBox {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-  .threeBox {
+}
+
+.threeBox {
     color: blue;
     text-align: center;
-  }
-  
-  #threeBlocks a:hover p {
+}
+
+#threeBlocks a:hover p {
     color: grey;
-  }
-  
-  /* other screens */
-  
-  @media (min-width: 1900px) {
+}
+
+/* other screens */
+
+@media(min-width: 1900px) {
     body {
-      font-family: Times New Roman;
-      /*font-family: helvetica, arial, sans-serif;*/
-      margin: 2.5em;
-      margin-left: 3em;
-      margin-right: 3em;
-      line-height: 1.6;
-      font-size: 15pt;
+        font-family: Times New Roman, serif;
+        /*font-family: helvetica, arial, sans-serif;*/
+        margin: 2.5em 3em;
+        line-height: 1.6;
+        font-size: 15pt;
     }
-  
+
     #nav {
-      width: 170px;
+        width: 170px;
     }
-    
-  
+
+
     .header {
-      font-size: 25px;
+        font-size: 25px;
     }
-  
+
     #blocks {
-      grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(8, 1fr);
     }
-  
+
     .block {
-      height: 200px;
+        height: 200px;
     }
-  
+
     #threeBlocks {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 70px 10px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 70px 10px;
     }
-  
+
     .threeBlock {
-      min-height: 300px;
-      width: 70%;
+        min-height: 300px;
+        width: 70%;
     }
-  
+
     #threeBlocks figure {
-      width: 70%;
+        width: 70%;
     }
-  }
-  
-  @media (max-width: 800px) {
+}
+
+@media(max-width: 800px) {
     #main {
-      width: 100%;
+        width: 100%;
     }
-  
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
     #nav,
     #visualMain #nav {
-      width: 80px;
-      float: left;
+        width: 80px;
+        float: left;
     }
-  
+
     #contents {
-      width: 600px;
-      padding-top: 15px;
+        width: 100%;
+        padding-top: 15px;
     }
-    
+
     .rainText {
-      padding-left: 0px;
+        padding-left: 0;
     }
-  
+
     #blocks,
     #threeBlocks {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
     }
-  
+
     #threeBlocks figure {
-      width: 70%;
+        width: 70%;
     }
-  
+
     #nav,
     #visualMain #nav {
-      margin-bottom: 60px;
-      float: none;
-      width: 100%;
+        margin-bottom: 60px;
+        float: none;
+        width: 100%;
     }
-  
+
     li {
-      float: left;
-      padding-right: 15px;
+        float: left;
+        padding-right: 15px;
     }
-  
+
     li a {
-      display: block;
+        display: block;
     }
-  }
-  
-  @media only screen and (max-device-width: 566px) {
+}
+
+@media only screen and(max-device-width: 566px) {
     #main {
-      width: 100%;
+        width: 100%;
     }
-  
+    /*
     #nav,
     #visualMain #nav {
       width: 100px;
       float: left;
     }
-  
-    #contents {
-      width: 600px;
-  
+  */
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
     }
-  
+
+    #contents {
+        width: 100%;
+
+    }
+
     #blocks,
     #threeBlocks {
-      grid-template-columns: repeat(1, 1fr);
-      gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
     }
-  
+
     #threeBlocks figure {
-      width: 70%;
+        width: 70%;
     }
-  
+
     .block {
-      height: 100px;
+        height: 100px;
     }
-  
+
     #nav,
     #visualMain #nav {
-      padding-bottom: 15px;
-      float: none;
-      width: 100%;
+        padding-bottom: 15px;
+        float: none;
+        width: 100%;
     }
-    
-      .rainText {
-      padding-left: 0px;
+
+    .rainText {
+        padding-left: 0;
     }
-  
+
     li {
-      float: left;
-      padding-right: 15px;
+        float: left;
+        padding-right: 15px;
     }
-  
+
     li a {
-      display: block;
+        display: block;
     }
-  }
-  
+}
