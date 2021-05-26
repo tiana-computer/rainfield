@@ -1,4 +1,7 @@
 <?php
 return [
-  'panel' => true
-];
+    'panel' =>[
+      'install' => true,
+      'slug' => 'rainlogin'
+    ]
+  ];
