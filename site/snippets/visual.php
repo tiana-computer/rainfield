@@ -87,7 +87,7 @@
       }
     </style>
 
-<div id="threeBlocks">
+<div id="threeBlocks" class="visual-grid">
 
   <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
 

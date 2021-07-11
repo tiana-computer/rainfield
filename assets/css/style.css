@@ -316,6 +316,8 @@ h2 {
     li a {
         display: block;
     }
+
+
 }
 
 @media only screen and(max-device-width: 566px) {
