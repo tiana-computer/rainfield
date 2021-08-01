@@ -25,13 +25,16 @@
 
     <div class="container">
       <div id="nav">
-
+      <ul>
         <?php foreach ($site->children()->listed() as $subpage) : ?>
-          <ul>
+          
             <li><a href="<?= $subpage->url() ?>"><?= $subpage->title() ?></a></li>
-          </ul>
+          
         <?php endforeach ?>
 
+        <li><a href="mailto:bte.rainfield@gmail.com">contact</a></li>
+
+        </ul>
       </div>
 
       <div id="contents">
