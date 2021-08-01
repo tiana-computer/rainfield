@@ -1,7 +1,7 @@
 /* CSS files add styling rules to your content */
 
 * {
-    scrollbar-color: blue white;
+    scrollbar-color: blue white !important;
     scrollbar-width: thin !important;
   }
 

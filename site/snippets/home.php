@@ -1,5 +1,10 @@
 <style>
 
+* {
+    scrollbar-color: blue white !important;
+    scrollbar-width: thin !important;
+  }
+
 .captionHome {
     color: grey;
     font-size: 10pt;
