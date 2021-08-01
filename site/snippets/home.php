@@ -8,6 +8,6 @@
 </style>
 
 <div>
-<img src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
-          <figcaption><?= $file->caption() ?></figcaption>
+<img src="<?= $file->url() ?>"  />
+      
 </div>
