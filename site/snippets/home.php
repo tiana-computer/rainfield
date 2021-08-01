@@ -1,9 +1,13 @@
-<div id="blocks">
-    <?php foreach ($page->children() as $home) : ?>
-      <a href="<?= $home->input() ?>" target="_blank">
-        <div class="block">
-          <p class="box"><?= $home->title() ?></p>
-        </div>
-      </a>
-    <?php endforeach ?>
-  </div>
+<style>
+
+  img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+</style>
+
+<div>
+<img class="myImages visualGal" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+          <figcaption><?= $file->caption() ?></figcaption>
+</div>
