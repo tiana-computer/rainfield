@@ -1,5 +1,27 @@
 /* CSS files add styling rules to your content */
 
+* {
+    scrollbar-color: blue white;
+    scrollbar-width: thin !important;
+  }
+
+  ::-moz-selection {
+    /* Code for Firefox */
+    color: white;
+    background: blue;
+  }
+  ::selection {
+    color: white;
+    background: blue;
+  }
+  ::-webkit-scrollbar {
+    width: 0.2em;
+    background-color: blue;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: white;
+  }
+
 body {
     font-family: Times New Roman, serif;
     /*font-family: helvetica, arial, sans-serif;*/
