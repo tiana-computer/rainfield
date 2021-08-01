@@ -1,7 +1,7 @@
 <style>
 
 * {
-    scrollbar-color: blue white !important;
+    scrollbar-color: white blue !important;
     scrollbar-width: thin !important;
   }
 
