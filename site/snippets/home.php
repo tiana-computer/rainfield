@@ -30,7 +30,7 @@
     <?php if ($file->type() == 'video') : ?>
   
         <figure class="threeBox">
-          <video controls>
+          <video style="display: block; margin: 0 auto; width: 40vw;" controls>
             <source src="<?= $file->url() ?>#t=1" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
