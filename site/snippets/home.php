@@ -1,10 +1,21 @@
+<style>
+
+.captionHome {
+    color: grey;
+    font-size: 10pt;
+    text-align: center;
+    padding: 10px 0 0;
+    margin: 0;
+}
+
+</style>
 <div>
 <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
 
     <?php if ($file->type() == 'image') : ?>
 
         <figure>
-          <img style="width: 500px;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+          <img style="display: block; margin: 0 auto; width: 500px;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
           <figcaption class="captionHome"><?= $file->caption() ?></figcaption>
         </figure>
 
