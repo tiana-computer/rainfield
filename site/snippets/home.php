@@ -14,6 +14,7 @@
 }
 
 </style>
+
 <div>
 <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
 

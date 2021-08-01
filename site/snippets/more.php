@@ -1,3 +1,12 @@
+<style>
+
+* {
+    scrollbar-color: white blue !important;
+    scrollbar-width: thin !important;
+  }
+
+</style>
+
 <div id="blocks">
     <?php foreach ($page->children() as $more) : ?>
       <a href="<?= $more->input() ?>" target="_blank">
