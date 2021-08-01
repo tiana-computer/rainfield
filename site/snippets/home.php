@@ -1,11 +1,3 @@
-<style>
-
-  img {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-</style>
 
 <div>
 <img src="<?= $file->url() ?>"  />
