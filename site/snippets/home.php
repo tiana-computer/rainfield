@@ -15,7 +15,7 @@
     <?php if ($file->type() == 'image') : ?>
 
         <figure>
-          <img style="display: block; margin: 0 auto; width: 50vw;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+          <img style="display: block; margin: 0 auto; width: 40vw;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
           <figcaption class="captionHome"><?= $file->caption() ?></figcaption>
         </figure>
 
