@@ -3,7 +3,7 @@
 
   <!-- page / stream area -->
 
-  <?php snippet('home') ?>
+  <?php snippet('more') ?>
 
 
 
