@@ -87,21 +87,21 @@
       }
     </style>
 
-<div id="oneBlocks">
+
 
   <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
 
     <?php if ($file->type() == 'image') : ?>
-      <div class="threeBlock">
-        <figure class="threeBox">
-          <img class="myImages visualGal" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+
+        <figure>
+          <img id="homeImg" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
           <figcaption><?= $file->caption() ?></figcaption>
         </figure>
-      </div>
+
     <?php endif ?>
 
     <?php if ($file->type() == 'video') : ?>
-      <div class="threeBlock">
+  
         <figure class="threeBox">
           <video controls>
             <source src="<?= $file->url() ?>#t=1" type="video/mp4" />
@@ -109,11 +109,10 @@
           </video>
           <figcaption><?= $file->caption() ?></figcaption>
         </figure>
-      </div>
+
     <?php endif ?>
 
   <?php endforeach ?>
 
-</div>
 
 
