@@ -1,4 +1,2 @@
-title: Posts
-sections:
-  Posts:
-    type: pages
+title: Visual
+preset: files
