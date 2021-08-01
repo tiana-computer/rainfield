@@ -8,6 +8,6 @@
 </style>
 
 <div>
-<img class="myImages visualGal" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+<img src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
           <figcaption><?= $file->caption() ?></figcaption>
 </div>
