@@ -9,7 +9,7 @@
 
 <div id="oneBlocks">
 
-<?php foreach ($page->children() as $more) : ?>
+<?php foreach ($page->children() as $links) : ?>
 
   <div class="textOneBlock">
     <h2><?= $text->title() ?></h2>
