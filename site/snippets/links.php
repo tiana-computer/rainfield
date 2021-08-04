@@ -12,8 +12,8 @@
 <?php foreach ($page->children() as $links) : ?>
 
   <div class="textOneBlock">
-    <h2><?= $text->title() ?></h2>
-    <p><?= $text->input() ?></p>
+    <h2><?= $links->title() ?></h2>
+    <p><?= $links->input() ?></p>
   </div>
 
 <?php endforeach ?>
