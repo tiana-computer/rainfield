@@ -2,3 +2,4 @@ title: Posts
 sections:
   Posts:
     type: pages
+    template: links

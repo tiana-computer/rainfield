@@ -1,4 +1,5 @@
 title: Posts
 sections:
   Posts:
-    type: posts
+    type: pages
+    template: text
