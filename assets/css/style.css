@@ -52,12 +52,12 @@ body {
     color: grey;
 }
 
-a .link {
+.link a {
     color: blue;
     text-decoration: none;
 }
 
-a .link:hover {
+.link a:hover {
     text-decoration: underline;
 }
 
