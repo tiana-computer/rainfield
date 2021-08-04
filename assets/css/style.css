@@ -52,7 +52,7 @@ body {
     color: grey;
 }
 
-.link a {
+.link a, .link a:visited, .link a:active {
     color: blue;
     text-decoration: none;
 }
