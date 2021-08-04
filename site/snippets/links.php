@@ -7,7 +7,7 @@
 
 </style>
 
-<div id="oneBlocks" style="grid-gap: 10px;">
+<div id="oneBlocks" style="grid-gap: 5px;">
 
 <?php foreach ($page->children() as $links) : ?>
 
