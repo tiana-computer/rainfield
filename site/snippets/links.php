@@ -7,11 +7,11 @@
 
 </style>
 
-<div id="oneBlocks">
+<div id="oneBlocks" style="grid-gap: 10px;">
 
 <?php foreach ($page->children() as $links) : ?>
 
-  <div class="textOneBlock" style="max-width: 70%;">
+  <div class="textOneBlock" style="max-width: 100%;">
     <h2 class="link"><a href="<?= $links->title() ?>"><?= $links->title() ?><a></h2>
   </div>
 
