@@ -35,7 +35,7 @@ body {
     color: blue;
     margin: 0;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 17pt;
     line-height: 2;
 }
 
@@ -65,7 +65,7 @@ h2 {
     color: blue;
     margin: 0;
     font-weight: normal;
-    font-size: 20pt;
+    font-size: 17pt;
 }
 
 #main {
@@ -277,7 +277,7 @@ h2 {
 
 
     .header {
-        font-size: 25px;
+        font-size: 19pt;
     }
 
     #blocks {
