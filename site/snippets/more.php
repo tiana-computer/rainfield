@@ -7,6 +7,20 @@
 
 </style>
 
+<div id="oneBlocks">
+
+<?php foreach ($page->children() as $more) : ?>
+
+  <div class="textOneBlock">
+    <h2><?= $text->title() ?></h2>
+    <p><?= $text->input() ?></p>
+  </div>
+
+<?php endforeach ?>
+
+</div>
+
+<!--
 <div id="blocks">
     <?php foreach ($page->children() as $more) : ?>
       <a href="<?= $more->input() ?>" target="_blank">
@@ -15,4 +29,4 @@
         </div>
       </a>
     <?php endforeach ?>
-  </div>
+  </div>-->
