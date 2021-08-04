@@ -52,6 +52,15 @@ body {
     color: grey;
 }
 
+a .link {
+    color: blue;
+    text-decoration: none;
+}
+
+a .link:hover {
+    text-decoration: underline;
+}
+
 h2 {
     color: blue;
     margin: 0;
