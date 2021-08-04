@@ -1,6 +1,3 @@
-title: Input
-fields:
-  input:
-    label: Input
-    type: textarea
-    size: large
+name: Page
+title: Page
+
