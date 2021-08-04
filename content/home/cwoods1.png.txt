@@ -1,4 +1,4 @@
-Caption: okay
+Caption:
 
 ----
 
@@ -10,7 +10,7 @@ Title: one
 
 ----
 
-Photo: - cwoods1.png
+Photo:
 
 ----
 
