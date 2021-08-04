@@ -11,7 +11,7 @@
 
 <?php foreach ($page->children() as $links) : ?>
 
-  <div class="textOneBlock" style="width: 100%;">
+  <div class="textOneBlock" style="max-width: 70%;">
     <h2><a class="link" href="<?= $links->title() ?>"><?= $links->title() ?><a></h2>
     <p><?= $links->input() ?></p>
   </div>
