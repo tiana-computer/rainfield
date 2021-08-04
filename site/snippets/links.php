@@ -13,7 +13,6 @@
 
   <div class="textOneBlock" style="max-width: 70%;">
     <h2 class="link"><a href="<?= $links->title() ?>"><?= $links->title() ?><a></h2>
-    <p><?= $links->input() ?></p>
   </div>
 
 <?php endforeach ?>
