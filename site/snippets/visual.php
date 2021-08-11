@@ -124,35 +124,52 @@
 
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
-  <img class="modal-content" id="img01" />
+  <div class="modal-content">
+  <div class="mySlides">
+  <img id="img01" />
   <!--<div id="caption"></div>-->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    </div>
 </div>
 
 
 <script>
-  // create references to the modal...
-  var modal = document.getElementById("myModal");
-  // to all images -- note I'm using a class!
-  var images = document.getElementsByClassName("myImages");
-  // the image in the modal
-  var modalImg = document.getElementById("img01");
-  // and the caption in the modal
-  //var captionText = document.getElementById("<?= $file->caption() ?>");
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
 
-  // Go through all of the images with our custom class
-  for (var i = 0; i < images.length; i++) {
-    var img = images[i];
-    // and attach our click listener for this image.
-    img.onclick = function(evt) {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    };
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
   }
-
-  var span = document.getElementsByClassName("close")[0];
-
-  span.onclick = function() {
-    modal.style.display = "none";
-  };
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
 </script>
