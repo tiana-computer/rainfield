@@ -86,40 +86,6 @@
     cursor: pointer;
   }
 
-
-  /* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-
-
   @media only screen and (max-width: 700px) {
     .modal-content {
       width: 100%;
@@ -158,21 +124,14 @@
 
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
-  <div class="modal-content">
-  <div class="mySlides">
-  <img id="img01" />
+  <img class="modal-content" id="img01" />
   <!--<div id="caption"></div>-->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    </div>
 </div>
 
 
 <script>
-
-    // create references to the modal...
-    var modal = document.getElementById("myModal");
+  // create references to the modal...
+  var modal = document.getElementById("myModal");
   // to all images -- note I'm using a class!
   var images = document.getElementsByClassName("myImages");
   // the image in the modal
@@ -196,44 +155,4 @@
   span.onclick = function() {
     modal.style.display = "none";
   };
-
-
-
-
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
 </script>
