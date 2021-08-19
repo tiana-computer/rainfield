@@ -214,17 +214,16 @@ img.hover-shadow {
 </style>
 
 <div id="threeBlocks" class="visual-grid">
-<?php $index= 0 ;?>
+
   <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
 
     <?php if ($file->type() == 'image') : ?>
       <div class="threeBlock">
         <figure class="threeBox">
-          <img class="cursor visualGal" style="width:100%" onclick="openModal();currentSlide($index)" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+          <img class="cursor visualGal" style="width:100%" onclick="openModal();currentSlide($value)" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
           <figcaption><?= $file->caption() ?></figcaption>
         </figure>
       </div>
-      <?php $index++ ;?>
     <?php endif ?>
 
     <?php if ($file->type() == 'video') : ?>
@@ -237,7 +236,6 @@ img.hover-shadow {
           <figcaption><?= $file->caption() ?></figcaption>
         </figure>
       </div>
-      <?php $index++ ;?>
     <?php endif ?>
 
   <?php endforeach ?>
