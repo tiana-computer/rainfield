@@ -269,12 +269,13 @@ img.hover-shadow {
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
-
+  <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
     <?php if ($file->type() == 'image') : ?>
       <div class="mySlides">
           <img style="width:100%" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
       </div>
     <?php endif ?>
+    <?php endforeach ?>
 
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
