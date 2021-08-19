@@ -102,6 +102,7 @@
   height: 100%;
   overflow: auto;
   background-color: rgba(255, 255, 255, 0.6);
+  transition: 0.6s ease;
 }
 
 /* Modal Content */
