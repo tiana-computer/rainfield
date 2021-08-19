@@ -147,7 +147,7 @@
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: blue;
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
@@ -165,7 +165,7 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
 }
 
 /* Number text (1/3 etc) */
