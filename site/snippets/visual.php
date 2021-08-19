@@ -215,6 +215,7 @@ img.hover-shadow {
 
 <div id="threeBlocks" class="visual-grid">
 
+
   <?php $index = 0; foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
 
     <?php if ($file->type() == 'image') : ?>
@@ -238,7 +239,7 @@ img.hover-shadow {
       </div>
     <?php endif ?>
 
-  <?php $index++; endforeach ?>
+  <?php echo $index++; endforeach ?>
 
 </div>
 
