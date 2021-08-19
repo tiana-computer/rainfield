@@ -257,8 +257,8 @@ img.hover-shadow {
     <?php endforeach ?>
 
 
-    <a class="prev" onclick="plusSlides(-1)">&#8619;</a>
-    <a class="next" onclick="plusSlides(1)">&#8620;</a>
+    <a class="prev" onclick="plusSlides(-1)">&#8636;</a>
+    <a class="next" onclick="plusSlides(1)">&#8640;</a>
 
     <div class="caption-container">
       <p id="caption"></p>
