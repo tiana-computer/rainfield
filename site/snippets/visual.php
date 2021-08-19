@@ -208,7 +208,7 @@ img.hover-shadow {
 
   @media only screen and (max-width: 700px) {
     .modal-content {
-      width: 95%;
+      width: 90%;
     }
   }
 </style>
