@@ -239,7 +239,7 @@ img.hover-shadow {
       </div>
     <?php endif ?>
 
-  <?php echo $index++; endforeach ?>
+  <?php $index++; endforeach ?>
 
 </div>
 
