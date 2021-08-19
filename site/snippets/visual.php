@@ -88,29 +88,7 @@
 
   /* EEEE  */
 
-  body {
-  font-family: Times, Times New Roman, serif;
-  margin: 0;
-}
 
-* {
-  box-sizing: border-box;
-}
-
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 25%;
-}
 
 /* The Modal (background) */
 .modal {
