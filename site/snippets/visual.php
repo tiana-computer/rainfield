@@ -214,6 +214,7 @@ img.hover-shadow {
 </style>
 
 <div id="threeBlocks" class="visual-grid">
+$index = 0;
 
   <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
 
@@ -224,6 +225,7 @@ img.hover-shadow {
           <figcaption><?= $file->caption() ?></figcaption>
         </figure>
       </div>
+      $index++;
     <?php endif ?>
 
     <?php if ($file->type() == 'video') : ?>
