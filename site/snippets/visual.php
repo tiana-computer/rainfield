@@ -86,6 +86,148 @@
     cursor: pointer;
   }
 
+  /* EEEE  */
+
+  body {
+  font-family: Times, Times New Roman, serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: blue;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: blue;
+  font-size: 12px;
+  padding: 8px 12px;
+}
+
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* FFFF */
+
   @media only screen and (max-width: 700px) {
     .modal-content {
       width: 100%;
@@ -100,7 +242,7 @@
     <?php if ($file->type() == 'image') : ?>
       <div class="threeBlock">
         <figure class="threeBox">
-          <img class="myImages visualGal" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+          <img class="cursor visualGal" style="width:100%" onclick="openModal();currentSlide(1)" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
           <figcaption><?= $file->caption() ?></figcaption>
         </figure>
       </div>
@@ -122,37 +264,65 @@
 
 </div>
 
+
+
 <div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01" />
-  <!--<div id="caption"></div>-->
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <?php if ($file->type() == 'image') : ?>
+      <div class="mySlides">
+          <img style="width:100%" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+      </div>
+    <?php endif ?>
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+  </div>
 </div>
 
 
 <script>
-  // create references to the modal...
-  var modal = document.getElementById("myModal");
-  // to all images -- note I'm using a class!
-  var images = document.getElementsByClassName("myImages");
-  // the image in the modal
-  var modalImg = document.getElementById("img01");
-  // and the caption in the modal
-  //var captionText = document.getElementById("<?= $file->caption() ?>");
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
 
-  // Go through all of the images with our custom class
-  for (var i = 0; i < images.length; i++) {
-    var img = images[i];
-    // and attach our click listener for this image.
-    img.onclick = function(evt) {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      captionText.innerHTML = this.alt;
-    };
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
   }
-
-  var span = document.getElementsByClassName("close")[0];
-
-  span.onclick = function() {
-    modal.style.display = "none";
-  };
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
 </script>
