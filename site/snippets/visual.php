@@ -220,7 +220,7 @@ img.hover-shadow {
     <?php if ($file->type() == 'image') : ?>
       <div class="threeBlock">
         <figure class="threeBox">
-          <img class="cursor visualGal" style="width:100%" onclick="openModal();currentSlide(1)" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+          <img class="cursor visualGal" style="width:100%" onclick="openModal();currentSlide({{ index }})" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
           <figcaption><?= $file->caption() ?></figcaption>
         </figure>
       </div>
