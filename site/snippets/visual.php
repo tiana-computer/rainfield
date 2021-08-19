@@ -101,7 +101,7 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 /* Modal Content */
