@@ -141,12 +141,23 @@
 /* Next & previous buttons */
 .prev,
 .next {
+  border: none;
+      display: inline-block;
+      padding: 8px 12px;
+      vertical-align: middle;
+      overflow: hidden;
+      text-decoration: none;
+      color: darkgreen;
+      background-color: rgb(255, 255, 255, 0.6);
+      text-align: center;
+      cursor: pointer;
+      white-space: nowrap;
+  /*
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
   color: blue;
   font-weight: bold;
   font-size: 20px;
@@ -154,12 +165,24 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
   -webkit-user-select: none;
+  */
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  position: absolute;
+      top: 50%;
+      right: 0%;
+      transform: translate(0%, -50%);
+      -ms-transform: translate(0%, -50%);
+}
+
+.prev {
+  position: absolute;
+      top: 50%;
+      left: 0%;
+      transform: translate(0%, -50%);
+      -ms-transform: translate(-0%, -50%);
 }
 
 /* On hover, add a black background color with a little bit see-through */
