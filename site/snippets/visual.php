@@ -38,8 +38,7 @@
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: 100%;
   }
 
   #caption {
@@ -90,69 +89,69 @@
 
 
 
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(255, 255, 255, 0.6);
-}
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  margin: auto;
-  padding: 0;
-  width: 50%;
-  max-width: 1200px;
-}
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+    max-width: 1200px;
+  }
 
-/* The Close Button */
-.close {
-  color: blue;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
+  /* The Close Button */
+  .close {
+    color: blue;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
 
-.close:hover,
-.close:focus {
-  color: grey;
-  text-decoration: none;
-  cursor: pointer;
-}
+  .close:hover,
+  .close:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
-.mySlides {
-  display: none;
-}
+  .mySlides {
+    display: none;
+  }
 
-.cursor {
-  cursor: pointer;
-}
+  .cursor {
+    cursor: pointer;
+  }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  border: none;
-      display: inline-block;
-      padding: 8px 12px;
-      vertical-align: middle;
-      overflow: hidden;
-      text-decoration: none;
-      color: darkgreen;
-      background-color: rgb(255, 255, 255, 0.6);
-      text-align: center;
-      cursor: pointer;
-      white-space: nowrap;
-  /*
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    border: none;
+    display: inline-block;
+    padding: 8px 12px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: darkgreen;
+    background-color: rgb(255, 255, 255, 0.6);
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    /*
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -166,68 +165,68 @@
   user-select: none;
   -webkit-user-select: none;
   */
-}
+  }
 
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-      top: 50%;
-      right: 0%;
-      transform: translate(0%, -50%);
-      -ms-transform: translate(0%, -50%);
-}
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+  }
 
-.prev {
-  position: absolute;
-      top: 50%;
-      left: 0%;
-      transform: translate(0%, -50%);
-      -ms-transform: translate(-0%, -50%);
-}
+  .prev {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    -ms-transform: translate(-0%, -50%);
+  }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  color: white;
-}
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    color: white;
+  }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: blue;
-  font-size: 12px;
-  padding: 8px 12px;
-}
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: blue;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
 
 
-img {
-  margin-bottom: -4px;
-}
+  img {
+    margin-bottom: -4px;
+  }
 
-.caption-container {
-  text-align: center;
+  .caption-container {
+    text-align: center;
 
-  padding: 2px 16px;
-  color: white;
-}
+    padding: 2px 16px;
+    color: white;
+  }
 
-.demo {
-  opacity: 0.6;
-}
+  .demo {
+    opacity: 0.6;
+  }
 
-.active,
-.demo:hover {
-  opacity: 1;
-}
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
 
-img.hover-shadow {
-  transition: 0.3s;
-}
+  img.hover-shadow {
+    transition: 0.3s;
+  }
 
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 
-/* FFFF */
+  /* FFFF */
 
   @media only screen and (max-width: 700px) {
     .modal-content {
@@ -239,12 +238,14 @@ img.hover-shadow {
 <div id="threeBlocks" class="visual-grid">
 
 
-  <?php $index = 1; foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
+  <?php $index = 1;
+  foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
 
     <?php if ($file->type() == 'image') : ?>
       <div class="threeBlock">
         <figure class="threeBox">
-          <img class="cursor visualGal" style="width:100%" onclick="openModal();currentSlide(<?= $index ?>)" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+          <img class="cursor visualGal" style="width: 80%;
+    max-width: 700px;" onclick="openModal();currentSlide(<?= $index ?>)" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
           <figcaption><?= $file->caption() ?></figcaption>
         </figure>
       </div>
@@ -262,7 +263,8 @@ img.hover-shadow {
       </div>
     <?php endif ?>
 
-  <?php $index++; endforeach ?>
+  <?php $index++;
+  endforeach ?>
 
 </div>
 
@@ -271,12 +273,12 @@ img.hover-shadow {
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
-  <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
-    <?php if ($file->type() == 'image') : ?>
-      <div class="mySlides">
+    <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
+      <?php if ($file->type() == 'image') : ?>
+        <div class="mySlides">
           <img style="width:100%" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
-      </div>
-    <?php endif ?>
+        </div>
+      <?php endif ?>
     <?php endforeach ?>
 
 
@@ -292,40 +294,44 @@ img.hover-shadow {
 
 
 <script>
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
+  function openModal() {
+    document.getElementById("myModal").style.display = "block";
+  }
 
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
+  function closeModal() {
+    document.getElementById("myModal").style.display = "none";
+  }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+  var slideIndex = 1;
+  showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {
+      slideIndex = 1
+    }
+    if (n < 1) {
+      slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
+    }
+    for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    captionText.innerHTML = dots[slideIndex - 1].alt;
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
 </script>
