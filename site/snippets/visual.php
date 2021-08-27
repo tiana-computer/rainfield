@@ -146,7 +146,7 @@
     vertical-align: middle;
     overflow: hidden;
     text-decoration: none;
-    color: darkgreen;
+    color: blue;
     background-color: rgb(255, 255, 255, 0.6);
     text-align: center;
     cursor: pointer;
