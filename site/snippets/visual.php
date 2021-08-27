@@ -275,7 +275,7 @@
     <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
       <?php if ($file->type() == 'image') : ?>
         <div class="mySlides">
-          <img style="display:block; margin: 0 auto; width:80%; max-width: 700px;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+          <img style="display:block; margin: 0 auto; width:90%;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
         </div>
       <?php endif ?>
     <?php endforeach ?>
