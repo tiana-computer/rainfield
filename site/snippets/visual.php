@@ -244,8 +244,7 @@
     <?php if ($file->type() == 'image') : ?>
       <div class="threeBlock">
         <figure class="threeBox">
-          <img class="cursor visualGal" style="width: 80%;
-    max-width: 700px;" onclick="openModal();currentSlide(<?= $index ?>)" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+          <img class="cursor visualGal" style="width: 100%" onclick="openModal();currentSlide(<?= $index ?>)" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
           <figcaption><?= $file->caption() ?></figcaption>
         </figure>
       </div>
@@ -276,7 +275,7 @@
     <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
       <?php if ($file->type() == 'image') : ?>
         <div class="mySlides">
-          <img style="width:100%" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+          <img style="width:80%; max-width: 700px;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
         </div>
       <?php endif ?>
     <?php endforeach ?>
