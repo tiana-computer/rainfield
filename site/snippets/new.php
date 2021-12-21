@@ -9,7 +9,7 @@
 
 <div id="oneBlocks" style="grid-gap: 5px;">
 
-<img src="../content/5_new/1_hi/piccoverfinal.png" style="width: 400px;"/>
+<img src="../content/5_new/1_hi/piccoverfinal.png" style="width: 300px; float: right; border: 1px solid blue;"/>
 
 <?php foreach ($page->children() as $new) : ?>
 
