@@ -9,10 +9,10 @@
 
 <div id="oneBlocks" style="grid-gap: 5px;">
 
-<?php foreach ($page->children() as $links) : ?>
+<?php foreach ($page->children() as $new) : ?>
 
   <div class="textOneBlock" style="max-width: 100%;">
-    <h2 class="link"><a href="<?= $links->input() ?>"><?= $links->title() ?><a></h2>
+    <h2 class="link"><a href="<?= $new->input() ?>"><?= $new->title() ?><a></h2>
   </div>
 
 <?php endforeach ?>
