@@ -15,17 +15,7 @@
 </div>
 
 
-<div>
-<?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
 
-        <figure>
-          <img style="width: 40%; float: right; border: 1px solid blue;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
-          <figcaption class="captionHome"><?= $file->caption() ?></figcaption>
-        </figure>
-
-  <?php endforeach ?>
-
-    </div>
 
 
 <div id="oneBlocks" style="grid-gap: 5px;">
