@@ -17,26 +17,10 @@
 <div>
 <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
 
-    <?php if ($file->type() == 'image') : ?>
-
         <figure>
           <img style="width: 40%; float: right; border: 1px solid blue;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
           <figcaption class="captionHome"><?= $file->caption() ?></figcaption>
         </figure>
-
-    <?php endif ?>
-
-    <?php if ($file->type() == 'video') : ?>
-  
-        <figure class="threeBox">
-          <video style="width: 40%; float: right; border: 1px solid blue;" controls>
-            <source src="<?= $file->url() ?>#t=1" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <figcaption class="captionHome"><?= $file->caption() ?></figcaption>
-        </figure>
-
-    <?php endif ?>
 
   <?php endforeach ?>
 
