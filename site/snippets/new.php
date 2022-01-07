@@ -15,14 +15,14 @@
   .newreleaseimg {
         width: 100%;
         float: none;
-        padding-bottom: 20px; 
+        margin-bottom: 20px; 
     }
 }
 @media only screen and(max-device-width: 566px) {
   .newreleaseimg {
         width: 100%;
         float: none;
-        padding-bottom: 20px; 
+        margin-bottom: 20px; 
     }
 }
 
