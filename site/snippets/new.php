@@ -5,6 +5,10 @@
     scrollbar-width: thin !important;
   }
 
+  .newreleaseimg {
+    width: 40%;
+}
+
 </style>
 
 <div>
