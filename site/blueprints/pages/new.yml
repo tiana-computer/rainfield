@@ -1,4 +1,5 @@
 title: Posts
+preset: files
 sections:
   Posts:
     type: pages
