@@ -7,23 +7,29 @@
 
   .newreleaseimg {
     width: 40%;
+    float: right; 
+    border: 1px solid blue;
 }
 
 @media(max-width: 800px) {
   .newreleaseimg {
         width: 100%;
+        float: none;
+        padding-bottom: 20px; 
     }
 }
 @media only screen and(max-device-width: 566px) {
   .newreleaseimg {
         width: 100%;
+        float: none;
+        padding-bottom: 20px; 
     }
 }
 
 </style>
 
 <div>
-<img class="newreleaseimg" src="../content/5_new/1_hi/piccoverfinal.png" style="float: right; border: 1px solid blue;"/>
+<img class="newreleaseimg" src="../content/5_new/1_hi/piccoverfinal.png"/>
 
 
 
