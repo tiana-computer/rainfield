@@ -260,6 +260,10 @@ h2 {
     color: grey;
 }
 
+.newreleaseimg {
+    width: 40%;
+}
+
 /* other screens */
 
 @media(min-width: 1900px) {
@@ -300,6 +304,10 @@ h2 {
 
     #threeBlocks figure {
         width: 70%;
+    }
+
+    .newreleaseimg {
+        width: 40%;
     }
 }
 
