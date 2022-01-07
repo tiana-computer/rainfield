@@ -9,6 +9,17 @@
     width: 40%;
 }
 
+@media(max-width: 800px) {
+  .newreleaseimg {
+        width: 100%;
+    }
+}
+@media only screen and(max-device-width: 566px) {
+  .newreleaseimg {
+        width: 100%;
+    }
+}
+
 </style>
 
 <div>

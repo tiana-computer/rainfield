@@ -304,9 +304,6 @@ h2 {
         width: 70%;
     }
 
-    .newreleaseimg {
-        width: 40%;
-    }
 }
 
 @media(max-width: 800px) {
@@ -358,10 +355,6 @@ h2 {
 
     li a {
         display: block;
-    }
-
-    .newreleaseimg {
-        width: 100%;
     }
 
 
