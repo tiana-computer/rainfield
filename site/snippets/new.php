@@ -29,7 +29,7 @@
 </style>
 
 <div>
-<img class="newreleaseimg" src="@/piccoverfinal.png"/>
+<img class="newreleaseimg" src="piccoverfinal.png"/>
 
 
 
