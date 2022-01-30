@@ -1,2 +1,7 @@
 title: Visual
-preset: files
+
+sections:
+  info:
+    type: fields
+  gallery:
+    type: files
