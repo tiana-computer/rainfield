@@ -59,8 +59,8 @@ a:hover {
 
       <?php if ($file->type() == 'image') : ?>
 
-        <figure style="border: 1px solid blue;">
-          <img style="display: block; margin: 0 auto; height: 70vh; width: auto;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+        <figure style="border: 1px solid blue; width: auto;">
+          <img style="display: block; margin: 0 auto; height: 70vh;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
           <figcaption class="captionHome"><?= $file->caption() ?></figcaption>
         </figure>
 
