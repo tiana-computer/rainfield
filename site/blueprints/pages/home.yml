@@ -4,6 +4,9 @@ sections:
   info:
     type: fields
     fields:
+      about:
+      link:
+      embed:
 
   gallery:
     type: files
