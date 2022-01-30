@@ -13,11 +13,21 @@
     margin: 0;
 }
 
+.container {
+  grid-template-columns: 1fr 1fr ;
+}
+
 </style>
 
-<div>
+<div class="container">
+  
+<div class="item">
 
 <p><?= $page->about() ?></p>
+
+</div>
+
+<div class="item">
 
 <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
 
@@ -43,6 +53,8 @@
     <?php endif ?>
 
   <?php endforeach ?>
+
+    </div>
 
     </div>
 
