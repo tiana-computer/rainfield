@@ -8,10 +8,10 @@ columns:
           fields:
             about:
               type: textarea
-            audio:
-              type: textarea
+            music:
+              type: text
             youtube:
-              type: textarea
+              type: text
 
   - width: 1/2
       sections:
