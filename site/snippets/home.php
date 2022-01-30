@@ -17,6 +17,7 @@
 
 <div>
 
+<p><?= $page->about() ?></p>
 
 <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
 
