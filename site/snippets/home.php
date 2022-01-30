@@ -40,6 +40,14 @@ a:hover {
     text-decoration: none;
 }
 
+@media(max-width: 800px) {
+
+  .home-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
 </style>
 
 <div class="home-container">
