@@ -25,7 +25,7 @@
     <p><?= $page->about() ?></p>
     <br>
     <span><?= $page->music() ?></span>
-    <br>
+    <br><br>
     <span><?= $page->youtube() ?></span>
 
   </div>
