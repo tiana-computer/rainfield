@@ -27,6 +27,8 @@
     <span class="oneBlock"><?= $page->music() ?></span>
     <br><br>
     <span class="oneBlock"><?= $page->youtube() ?></span>
+    <br><br>
+    <p><?= $page->more() ?></p>
 
   </div>
 

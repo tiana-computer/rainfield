@@ -6,8 +6,12 @@ About: Rainfield is an American musician from Austin, Texas. He currently lives 
 
 ----
 
-Audio playlist embed: <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2WS5H0SboypNckT0nB28Cz?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+Music: <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2WS5H0SboypNckT0nB28Cz?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
 ----
 
-Youtube playlist embed: <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLFhhrtcGIF5y9qzyD-kcGVdPUXyHwVEzu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Youtube: <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLFhhrtcGIF5y9qzyD-kcGVdPUXyHwVEzu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+----
+
+More: <a href="https://www.contactonline.life/life-online-rainfield/">Contact Online Interview</a>

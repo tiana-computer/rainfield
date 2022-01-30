@@ -12,6 +12,8 @@ columns:
               type: text
             youtube:
               type: text
+            more:
+              type: textarea
 
   - width: 1/2
       sections:
