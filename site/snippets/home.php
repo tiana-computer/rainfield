@@ -30,6 +30,8 @@
 p {
   margin: 0px;
   padding: 0px;
+  color: grey;
+    font-size: 10pt;
 }
 
 a:hover {
