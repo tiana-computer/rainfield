@@ -17,7 +17,7 @@
 
 <div>
 
-<p><?= $text->about() ?></p>
+<p><?= $textarea->about() ?></p>
 
 <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
 
