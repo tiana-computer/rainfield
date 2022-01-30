@@ -16,6 +16,9 @@
 </style>
 
 <div>
+
+<p><?= $text->about() ?></p>
+
 <?php foreach ($page->files()->sortBy('sort', 'asc') as $file) : ?>
 
     <?php if ($file->type() == 'image') : ?>
