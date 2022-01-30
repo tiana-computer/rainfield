@@ -24,7 +24,7 @@
 
     <p><?= $page->about() ?></p>
     <br>
-    <span><?= $page->audioplaylistembed() ?></span>
+    <span><?= $page->audio() ?></span>
 
   </div>
 
