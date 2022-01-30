@@ -12,6 +12,7 @@ sections:
         type: text
 
   gallery:
+    title: Image
     type: files
     layout: cards
     image:
