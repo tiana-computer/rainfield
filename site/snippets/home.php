@@ -31,7 +31,7 @@ p {
   margin: 0px;
   padding: 0px;
   color: grey;
-    font-size: 12pt;
+    font-size: 17pt;
     line-height: 1.6;
 }
 
