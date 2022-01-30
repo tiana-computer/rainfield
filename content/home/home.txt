@@ -6,7 +6,7 @@ About: Rainfield is an American musician from Austin, Texas. He currently lives 
 
 ----
 
-Music: <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2WS5H0SboypNckT0nB28Cz?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+Music: <iframe style="border-radius:0px" src="https://open.spotify.com/embed/album/2WS5H0SboypNckT0nB28Cz?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
 ----
 
