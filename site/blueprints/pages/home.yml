@@ -5,3 +5,4 @@ sections:
     type: fields
   gallery:
     type: files
+    layout: cards
