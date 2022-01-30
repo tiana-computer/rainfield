@@ -5,8 +5,11 @@ sections:
     type: fields
     fields:
       about:
+        type: text
       link:
+        type: url
       embed:
+        type: text
 
   gallery:
     type: files
