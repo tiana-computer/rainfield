@@ -8,11 +8,9 @@ columns:
           fields:
             about:
               type: textarea
-            link:
-              type: url
-            audio embed:
+            audio playlist embed:
               type: textarea
-            youtube embed:
+            youtube playlist embed:
               type: textarea
 
   - width: 1/2
