@@ -1,19 +1,21 @@
 title: Visual
 
-sections:
-  info:
-    type: fields
-    fields:
-      about:
-        type: text
-      link:
-        type: url
-      embed:
-        type: text
+columns:
+  - width: 1/2
+      sections:
+        info:
+          type: fields
+          fields:
+            about:
+              type: textarea
+            link:
+              type: url
+            embed:
+              type: textarea
 
-  gallery:
-    title: Image
-    type: files
-    layout: cards
-    image:
-     ratio: 1/1
+  - width: 1/2
+      gallery:
+        type: files
+        layout: cards
+        image:
+        ratio: 1/1
