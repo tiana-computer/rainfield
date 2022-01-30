@@ -27,6 +27,11 @@
     transition: 0.8s;
 }
 
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
 a:hover {
     color: gainsboro;
     text-decoration: none;
@@ -39,7 +44,7 @@ a:hover {
   <div class="home-item">
 
     <p><?= $page->about() ?></p>
-    <br>
+    <br><br>
     <span class="oneBlock"><?= $page->music() ?></span>
     <br><br>
     <span class="oneBlock"><?= $page->youtube() ?></span>
