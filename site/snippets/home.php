@@ -23,6 +23,8 @@
   <div class="home-item">
 
     <p><?= $page->about() ?></p>
+    <br>
+    <span><?= $page->audioplaylistembed() ?></span>
 
   </div>
 
