@@ -31,7 +31,8 @@ p {
   margin: 0px;
   padding: 0px;
   color: grey;
-    font-size: 10pt;
+    font-size: 12pt;
+    line-height: 1.6;
 }
 
 a:hover {
