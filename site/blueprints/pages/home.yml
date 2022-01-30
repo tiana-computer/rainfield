@@ -3,6 +3,10 @@ title: Visual
 sections:
   info:
     type: fields
+    fields:
+
   gallery:
     type: files
     layout: cards
+    image:
+     ratio: 1/1
