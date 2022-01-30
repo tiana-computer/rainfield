@@ -21,7 +21,7 @@
     <?php if ($file->type() == 'image') : ?>
 
         <figure>
-          <img style="display: block; margin: 0 auto; width: 40vw; max-height: 1000px;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+          <img style="display: block; margin: 0 auto; width: 40vw; max-with: 1000px;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
           <figcaption class="captionHome"><?= $file->caption() ?></figcaption>
         </figure>
 
@@ -30,7 +30,7 @@
     <?php if ($file->type() == 'video') : ?>
   
         <figure class="threeBox">
-          <video style="display: block; margin: 0 auto; width: 40vw; max-height: 1000px;" controls>
+          <video style="display: block; margin: 0 auto; width: 40vw; max-with: 1000px;" controls>
             <source src="<?= $file->url() ?>#t=1" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
