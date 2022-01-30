@@ -10,7 +10,9 @@ columns:
               type: textarea
             link:
               type: url
-            embed:
+            audio embed:
+              type: textarea
+            youtube embed:
               type: textarea
 
   - width: 1/2
