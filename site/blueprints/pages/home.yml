@@ -14,8 +14,9 @@ columns:
               type: textarea
 
   - width: 1/2
-      gallery:
-        type: files
-        layout: cards
-        image:
-        ratio: 1/1
+      sections:
+        gallery:
+          type: files
+          layout: cards
+          image:
+          ratio: 1/1
