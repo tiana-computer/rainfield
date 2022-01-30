@@ -20,7 +20,18 @@
   .home-item {
     width: 560px;
   }
-  
+
+  a {
+    text-decoration: none;
+    color: blue;
+    transition: 0.8s;
+}
+
+a:hover {
+    color: gainsboro;
+    text-decoration: none;
+}
+
 </style>
 
 <div class="home-container">
