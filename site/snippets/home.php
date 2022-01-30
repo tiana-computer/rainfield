@@ -24,9 +24,9 @@
 
     <p><?= $page->about() ?></p>
     <br>
-    <span><?= $page->music() ?></span>
+    <span class="oneBlock"><?= $page->music() ?></span>
     <br><br>
-    <span><?= $page->youtube() ?></span>
+    <span class="oneBlock"><?= $page->youtube() ?></span>
 
   </div>
 
