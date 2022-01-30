@@ -8,7 +8,7 @@
     color: grey;
     font-size: 10pt;
     text-align: center;
-    padding: 10px 0 0;
+    padding: 10px;
     margin: 0;
   }
 
