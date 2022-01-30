@@ -24,7 +24,7 @@
 
     <p><?= $page->about() ?></p>
     <br>
-    <span><?= $field->audio() ?></span>
+    <span><?= $page->music() ?></span>
 
   </div>
 
