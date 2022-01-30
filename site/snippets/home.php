@@ -16,6 +16,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  .home-item {
+    width: 560px;
+  }
+  
 </style>
 
 <div class="home-container">
