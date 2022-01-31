@@ -46,6 +46,7 @@
     border: 1px solid blue;
     width: 450px ;
     float: right;
+    margin-bottom: 60px;
   }
 
   .home-item1 {
