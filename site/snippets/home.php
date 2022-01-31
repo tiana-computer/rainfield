@@ -77,8 +77,8 @@
     }
 
     .youtubeEmbed {
-      width: 300;
-      height: 105;
+      width: 350;
+      height: 155;
     }
   }
 </style>
