@@ -14,7 +14,7 @@
 
   .home-container {
     display: grid;
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 450px 1fr;
   }
 
   .home-item {
