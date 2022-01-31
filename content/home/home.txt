@@ -10,7 +10,7 @@ Music: <iframe style="border-radius:0px" src="https://open.spotify.com/embed/alb
 
 ----
 
-Youtube: <iframe width="400" height="205" src="https://www.youtube.com/embed/videoseries?list=PLFhhrtcGIF5y9qzyD-kcGVdPUXyHwVEzu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+Youtube: <iframe width="325" height="130" src="https://www.youtube.com/embed/videoseries?list=PLFhhrtcGIF5y9qzyD-kcGVdPUXyHwVEzu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ----
 

@@ -50,7 +50,7 @@
 
   .home-item1 {
     margin-right: 50px;
-    width: 400px;
+    width: 325px;
   }
 
 
