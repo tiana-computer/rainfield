@@ -14,7 +14,7 @@
 
   .home-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 515px 1fr;
   }
 
   .home-item {
