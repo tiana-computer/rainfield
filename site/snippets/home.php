@@ -97,7 +97,7 @@
 
         <figure>
           <img style="width: 100%;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
-          <?php if ($page->extract()->isNotEmpty()): ?>
+          <?php if (!$page->extract()->empty()): ?>
           <figcaption class="captionHome"><?= $file->caption() ?></figcaption>
           <?php endif; ?>
         </figure>
@@ -111,7 +111,7 @@
             <source src="<?= $file->url() ?>#t=1" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <?php if ($page->extract()->isNotEmpty()): ?>
+          <?php if (!$page->extract()->empty()): ?>
           <figcaption class="captionHome"><?= $file->caption() ?></figcaption>
           <?php endif; ?>
         </figure>
