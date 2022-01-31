@@ -56,6 +56,7 @@
 
     .home-item figure {
       width: 100%;
+      margin-top: 15px;
     }
   }
 </style>
