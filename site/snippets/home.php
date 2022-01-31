@@ -52,6 +52,11 @@
     margin-right: 50px;
   }
 
+  .youtubeEmbed {
+    width: 500;
+    height: 305;
+  }
+
   @media(max-width: 800px) {
 
     .home-container {
@@ -69,6 +74,11 @@
 
     .home-item1 {
       margin-right: 0px;
+    }
+
+    .youtubeEmbed {
+      width: 300;
+      height: 105;
     }
   }
 </style>
