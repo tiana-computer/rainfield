@@ -44,7 +44,7 @@
     display: block;
     margin: 0 auto;
     border: 1px solid blue;
-    width: 30vw;
+    width: 500px;
 
   }
 
@@ -55,7 +55,7 @@
     }
 
     .home-item figure {
-      width: 100%;
+      width: 500px;
       margin-top: 25px;
     }
   }
