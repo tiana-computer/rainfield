@@ -18,7 +18,7 @@
   }
 
   .home-item {
-    width: 425px;
+    width: 400px;
   }
 
   a {
@@ -44,13 +44,13 @@
     display: block;
     margin: 0 auto;
     border: 1px solid blue;
-    width: 425px;
+    width: 400px;
     float: right;
   }
 
   .home-item1 {
     margin-right: 50px;
-    width: 425px;
+    width: 400px;
   }
 
 
