@@ -10,7 +10,6 @@
     text-align: center;
     padding: 10px;
     margin: 0;
-    line-height: 1;
   }
 
   .home-container {
@@ -43,6 +42,7 @@
     width: 325px;
     float: right;
     margin-bottom: 60px;
+    line-height: 1;
   }
 
   .home-item1 {
