@@ -11,8 +11,8 @@
 
 
   <div class="textOneBlock">
-    <h2><?= $text->title() ?></h2>
-    <p><?= $text->input() ?></p>
+    <h2><?= $page->title() ?></h2>
+    <p><?= $page->input() ?></p>
   </div>
 
 
