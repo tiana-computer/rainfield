@@ -14,7 +14,7 @@
 
   .home-container {
     display: grid;
-    grid-template-columns: 515px 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .home-item {
@@ -48,6 +48,10 @@
     float: right;
   }
 
+  .home-item1 {
+    margin-right: 50px;
+  }
+
   @media(max-width: 800px) {
 
     .home-container {
@@ -58,12 +62,16 @@
       width: 500px;
       margin-top: 25px;
     }
+
+    .home-item1 {
+      margin-right: 0px;
+    }
   }
 </style>
 
 <div class="home-container">
 
-  <div class="home-item">
+  <div class="home-item home-item1">
 
     <p><?= $page->about() ?></p>
     <br><br>
