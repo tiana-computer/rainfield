@@ -25,37 +25,39 @@
     text-decoration: none;
     color: blue;
     transition: 0.8s;
-}
-
-p {
-  margin: 0px;
-  padding: 0px;
-  color: grey;
-    font-size: 17pt;
-    line-height: 1.6;
-}
-
-a:hover {
-    color: gainsboro;
-    text-decoration: none;
-}
-
-.home-item figure {
-    border: 1px solid blue; 
-    width: 30vw;
   }
 
-@media(max-width: 800px) {
+  p {
+    margin: 0px;
+    padding: 0px;
+    color: grey;
+    font-size: 17pt;
+    line-height: 1.6;
+  }
 
-  .home-container {
-    grid-template-columns: 1fr;
+  a:hover {
+    color: gainsboro;
+    text-decoration: none;
   }
 
   .home-item figure {
-    width: 100%;
-  }
-}
+    display: block;
+    margin: 0 auto;
+    border: 1px solid blue;
+    width: 30vw;
 
+  }
+
+  @media(max-width: 800px) {
+
+    .home-container {
+      grid-template-columns: 1fr;
+    }
+
+    .home-item figure {
+      width: 100%;
+    }
+  }
 </style>
 
 <div class="home-container">
@@ -79,7 +81,7 @@ a:hover {
       <?php if ($file->type() == 'image') : ?>
 
         <figure>
-          <img style="display: block; margin: 0 auto; width: 100%;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
+          <img style="width: 100%;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
           <figcaption class="captionHome"><?= $file->caption() ?></figcaption>
         </figure>
 
