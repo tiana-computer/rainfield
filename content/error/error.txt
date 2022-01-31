@@ -1,5 +1,5 @@
-Title: error
+Title: error 404
 
 ----
 
-Input: an error occurred
+Input: page does not exist
