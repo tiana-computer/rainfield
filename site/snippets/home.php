@@ -58,8 +58,12 @@
       grid-template-columns: 1fr;
     }
 
+    .home-item {
+      width: 100%;
+    }
+
     .home-item figure {
-      width: 500px;
+      width: 100%;
       margin-top: 25px;
     }
 
@@ -99,7 +103,7 @@
       <?php if ($file->type() == 'video') : ?>
 
         <figure class="threeBox">
-          <video style="display: block; margin: 0 auto; height: 70vh; width: auto;" controls>
+          <video controls>
             <source src="<?= $file->url() ?>#t=1" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
