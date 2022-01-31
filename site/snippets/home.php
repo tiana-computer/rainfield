@@ -45,7 +45,7 @@
     margin: 0 auto;
     border: 1px solid blue;
     width: 500px;
-
+    float: right;
   }
 
   @media(max-width: 800px) {
