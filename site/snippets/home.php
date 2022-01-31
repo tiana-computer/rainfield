@@ -18,7 +18,7 @@
   }
 
   .home-item {
-    width: 500px;
+    width: 425px;
   }
 
   a {
@@ -44,18 +44,16 @@
     display: block;
     margin: 0 auto;
     border: 1px solid blue;
-    width: 500px;
+    width: 425px;
     float: right;
   }
 
   .home-item1 {
     margin-right: 50px;
+    width: 425px;
   }
 
-  .youtubeEmbed {
-    width: 500;
-    height: 305;
-  }
+
 
   @media(max-width: 800px) {
 
@@ -76,10 +74,6 @@
       margin-right: 0px;
     }
 
-    .youtubeEmbed {
-      width: 425;
-      height: 230;
-    }
   }
 </style>
 
