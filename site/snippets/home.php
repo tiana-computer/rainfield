@@ -15,6 +15,9 @@
   .home-container {
     display: grid;
     grid-template-columns: 350px 1fr;
+    color: grey;
+    font-size: 15pt;
+    line-height: 1.6;
   }
 
   .home-item {
@@ -25,14 +28,6 @@
     text-decoration: none;
     color: blue;
     transition: 0.8s;
-  }
-
-  p {
-    margin: 0px;
-    padding: 0px;
-    color: grey;
-    font-size: 15pt;
-    line-height: 1.6;
   }
 
   a:hover {
@@ -82,13 +77,13 @@
 
   <div class="home-item home-item1">
 
-    <p><?= $page->about() ?></p>
+    <span><?= $page->about() ?></span>
     <br><br>
     <span class="oneBlock"><?= $page->music() ?></span>
     <br><br>
     <span class="oneBlock"><?= $page->youtube() ?></span>
     <br><br>
-    <p><?= $page->more() ?></p>
+    <span><?= $page->more() ?></span>
 
   </div>
 
