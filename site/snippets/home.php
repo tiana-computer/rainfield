@@ -18,7 +18,7 @@
   }
 
   .home-item {
-    width: 400px;
+    width: 450px;
   }
 
   a {
@@ -44,7 +44,7 @@
     display: block;
     margin: 0 auto;
     border: 1px solid blue;
-    width: 400px ;
+    width: 450px ;
     float: right;
   }
 
