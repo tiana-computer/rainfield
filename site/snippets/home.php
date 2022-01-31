@@ -42,7 +42,7 @@
     width: 325px;
     float: right;
     margin-bottom: 60px;
-    line-height: 1;
+    line-height: 0;
   }
 
   .home-item1 {
