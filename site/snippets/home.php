@@ -18,7 +18,7 @@
   }
 
   .home-item {
-    width: 560px;
+    width: 500px;
   }
 
   a {
@@ -40,12 +40,20 @@ a:hover {
     text-decoration: none;
 }
 
+.home-item figure {
+    border: 1px solid blue; 
+    width: 30vw;
+  }
+
 @media(max-width: 800px) {
 
   .home-container {
     grid-template-columns: 1fr;
   }
 
+  .home-item figure {
+    width: 100%;
+  }
 }
 
 </style>
@@ -70,7 +78,7 @@ a:hover {
 
       <?php if ($file->type() == 'image') : ?>
 
-        <figure style="border: 1px solid blue; width: 30vw;">
+        <figure>
           <img style="display: block; margin: 0 auto; width: 100%;" src="<?= $file->url() ?>" alt="<?= $page->title()->html() ?>" />
           <figcaption class="captionHome"><?= $file->caption() ?></figcaption>
         </figure>
