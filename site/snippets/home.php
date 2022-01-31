@@ -31,7 +31,7 @@
     margin: 0px;
     padding: 0px;
     color: grey;
-    font-size: 17pt;
+    font-size: 15pt;
     line-height: 1.6;
   }
 
