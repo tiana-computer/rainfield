@@ -44,7 +44,7 @@
     display: block;
     margin: 0 auto;
     border: 1px solid blue;
-    width: 450px ;
+    width: 325px;
     float: right;
     margin-bottom: 60px;
   }
