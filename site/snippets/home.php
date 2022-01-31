@@ -10,6 +10,7 @@
     text-align: center;
     padding: 10px;
     margin: 0;
+    line-height: 1;
   }
 
   .home-container {
